@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
 
         String[] xmlList = new String[6];
-        xmllist[0] = "<tag1>";
+        xmlList[0] = "<tag1>";
         xmlList[1] = "text1";
         xmlList[2] = "</tag1>";
         xmlList[3] = "<tag2>";

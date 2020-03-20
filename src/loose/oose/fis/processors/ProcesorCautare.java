@@ -15,9 +15,9 @@ public class ProcesorCautare implements Procesor {
     public int proceseaza(ArrayList<Document> documente) {
         int res = 0;
 
-        for (document document : documente) {
-            string[] continut = document.analizeaza();
-            for (string cuvant : continut) {
+        for (Document document : documente) {
+            String[] continut = document.analizeaza();
+            for (String cuvant : continut) {
                 if (cuvant.equals(text)) {
                     res++;
                 }
