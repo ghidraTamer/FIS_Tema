@@ -6,6 +6,7 @@ import loose.oose.fis.documents.XML;
 import loose.oose.fis.processors.Procesor;
 import loose.oose.fis.processors.ProcesorCautare;
 import loose.oose.fis.processors.ProcesorCompus;
+import loose.oose.fis.printing.*;
 
 import java.util.ArrayList;
 
@@ -14,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
 
         String[] xmlList = new String[6];
-        xmllist[0] = "<tag1>";
+        xmlList[0] = "<tag1>";
         xmlList[1] = "text1";
         xmlList[2] = "</tag1>";
         xmlList[3] = "<tag2>";
@@ -37,6 +38,9 @@ public class Main {
         ProcesorCompus pc2 = new ProcesorCompus();
         pc2.adaugaProcesor(pc1);
         pc2.adaugaProcesor(c3);
+
+        new JobDone();
+        new Motivation();
 
         System.out.println(pc2.proceseaza(documente));
     }
